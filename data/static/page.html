@@ -1,0 +1,75 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="col center">
+            <div class="col-size">
+                <h3 style="display: inline"> Croqui: </h3> <a> (www.naokiarima.com.br)</a>
+            </div>
+        </div>
+
+        <div class="col" >
+            <div class="center">
+                <a class="button6" onclick="location.href='/croqui'" style="width: 200px; height: 40px;"> Baixar croqui </a>
+            </div>
+        </div>
+
+        <div class="col center">
+            <div class="col-size">
+                <h3> Faça um comentário:</h3>
+            </div>
+        </div>
+
+        <div class="col center">
+            <div class="col-size">
+                <form name="comment-form" onsubmit="submit_comment()">
+                    <ul class="form-style-1">
+                        <li>
+                            <label>Nome: </label>
+                            <input type="text" id="name" class="field-long" /> 
+                        </li>
+         
+                        <li>
+                            <label>Comentário: </span></label>
+                            <textarea id="content" class="field-long field-textarea"></textarea>
+                        </li>
+                        <li>
+                            <div class="col center" style="margin: 15 0 15 0;">
+                                <input class="button6" type="submit" value="Enviar" style="width: 135px; height: 40px; border: 0;">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        
+        <div class="col center">
+            <div class="col-size">
+                <h3> Comentários:</h3>
+            </div>
+        </div>
+
+        <div class="col" id="comment-box">
+            <!-- Comment prefab -->
+            <div class="col center" id="comment-father">
+                <div class="comment col-size" >
+                    <div style="margin: 5px;">
+                        <div style="display: flex;">
+                            <h4 id="author-name" style="margin: 0;"> Name </h3 >
+                            <a id="comment-date" "style="margin: 0;"> &nbsp (23-05-2022)</a>
+                        </div>
+                        <p id="comment-content">
+                            Comment
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
